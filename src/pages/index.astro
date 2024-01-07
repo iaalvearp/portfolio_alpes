@@ -1,0 +1,43 @@
+---
+import Badge from '../components/Badge.astro';
+import Layout from '../layouts/Layout.astro';
+import GithubIcon from '../../src/icons/GithubIcon.astro'
+import LinkedinIcon from '../../src/icons/LinkedinIcon.astro'
+import MailIcon from '../../src/icons/MailIcon.astro'
+import SocialBadget from '../components/SocialBadget.astro'
+---
+
+<Layout title="Portfolio de Ali AlPes - Desarrollador y programador Web">
+	<main>
+		<section class="lg:w-[740px] py-32">
+			<img
+			class="rounded-full size-32 mb-10"
+			src="/portfolio_ico.png" 
+			alt="ali-alpes-pic">
+			<h1 class="text-5xl text-white font-bold flex flex-row justify-center lg:justify-start lg:text-start">
+				Hola, soy <strong class="mx-3">Ali AlPes</strong> <Badge>Disponible</Badge>
+			</h1>
+			<h2 class="text-xl text-wrap opacity-80 lg:pt-10 lg:pb-7 justify-center lg:justify-start">
+				+1 año creando proyectos personales en mi <a class="font-bold opacity-70" href="https://www.github.com/" target="_blank">Repo</a> en Github. De Guayaquil, Ecuador 🇪🇨. Enfocado a la resolución de problemas.
+			</h2>
+			<nav class="flex gap-x-2">
+				<SocialBadget href="https://www.github.com/">
+					<GithubIcon class="size-6 cursor-pointer" />
+					Github
+				</SocialBadget>
+				<SocialBadget href="https://www.linkedin.com/">
+					<LinkedinIcon class="size-6 cursor-pointer" />
+					LinkedIn
+				</SocialBadget>
+				<SocialBadget href="https://www.linkedin.com/">
+					<MailIcon class="size-6 cursor-pointer" />
+					iaalvearp@gmail.com
+				</SocialBadget>
+			</nav>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	
+</style>
